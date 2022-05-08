@@ -6,7 +6,7 @@
 template <typename ... T>
 class tain {
 public:
-
+	
 	void* operator new(size_t n) {
 		void* ptr = std::malloc(n);
 		if (!ptr) { throw std::bad_alloc(); }
@@ -21,17 +21,14 @@ public:
 		return (_sum + ...);
 	}
 	
-	// !
-	/* 
-	auto multiply(const T& ... a) -> decltype (t * ...) {
-		return (t * ...);
+	template <typename Y>
+	static auto multiply(const T& ..., const Y& b) -> decltype (b * ...) {
+		return (b * ...);
 	}
-	 */
-
 
 public:
 
-	std::function<void()> tm = [=]<T>() {	};
+ std::function<void()> tm = [&]<typename D>() {	};
 
 
 };
