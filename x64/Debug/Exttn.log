@@ -1,6 +1,18 @@
 ﻿  Source.cpp
-C:\Users\ikstr\source\repos\Exttn\Exttn\Take.h(25,66): error C2760: syntax error: '...' was unexpected here; expected 'expression'
-C:\Users\ikstr\source\repos\Exttn\Exttn\Take.h(34): message : see reference to class template instantiation 'tain<T...>' being compiled
-C:\Users\ikstr\source\repos\Exttn\Exttn\Take.h(26,10): error C7515: a fold expression must contain an unexpanded parameter pack
-C:\Users\ikstr\source\repos\Exttn\Exttn\Take.h(25,14): message : This diagnostic occurred in the compiler generated function 'unknown-type tain<T...>::multiply(const T &...,const Y &)'
-C:\Users\ikstr\source\repos\Exttn\Exttn\Take.h(25,52): error C3553: decltype expects an expression not a type
+C:\Users\ikstr\source\repos\Exttn\Exttn\Take.h(24,64): error C2760: syntax error: '...' was unexpected here; expected 'expression'
+C:\Users\ikstr\source\repos\Exttn\Exttn\Take.h(39): message : see reference to class template instantiation 'tain<T...>' being compiled
+C:\Users\ikstr\source\repos\Exttn\Exttn\Take.h(30,1): error C3520: 'T': parameter pack must be expanded in this context
+C:\Users\ikstr\source\repos\Exttn\Exttn\Take.h(25,10): error C7515: a fold expression must contain an unexpanded parameter pack
+C:\Users\ikstr\source\repos\Exttn\Exttn\Take.h(24,14): message : This diagnostic occurred in the compiler generated function 'unknown-type tain<T...>::multiply(const T &...,const Y &)'
+C:\Users\ikstr\source\repos\Exttn\Exttn\Take.h(24,54): error C3553: decltype expects an expression not a type
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(510,1): error C3520: 'T': parameter pack must be expanded in this context
+C:\Users\ikstr\source\repos\Exttn\Exttn\Take.h(30): message : see reference to class template instantiation 'std::vector<T,std::allocator<T>>' being compiled
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(517,1): error C3520: 'T': parameter pack must be expanded in this context
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(524,1): error C3520: 'T': parameter pack must be expanded in this context
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(533,1): error C3520: 'T': parameter pack must be expanded in this context
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(561,1): error C3520: 'T': parameter pack must be expanded in this context
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(562,1): error C3520: 'T': parameter pack must be expanded in this context
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(1075,1): error C3520: 'T': parameter pack must be expanded in this context
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(1096,1): error C3520: 'T': parameter pack must be expanded in this context
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(1356,1): error C3520: 'T': parameter pack must be expanded in this context
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\vector(1658,1): error C3520: 'T': parameter pack must be expanded in this context

@@ -3,8 +3,7 @@
 #include <iostream>
 #include <functional>
 
-template <typename ... T>
-class tain {
+template <typename ... T>  class tain {
 public:
 	
 	void* operator new(size_t n) {
@@ -22,13 +21,16 @@ public:
 	}
 	
 	template <typename Y>
-	static auto multiply(const T& ..., const Y& b) -> decltype (b * ...) {
-		return (b * ...);
+	static auto multiply(const T& ... a, const Y& b) -> decltype (... * b) {
+		return (... * b);
 	}
 
 public:
 
- std::function<void()> tm = [&]<typename D>() {	};
+	std::vector<T> Vec;
+
+//	tain(T ... a) { }
+
 
 
 };

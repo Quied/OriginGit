@@ -5,12 +5,13 @@
 
 int main() {
 
-	tain<int> tn;
-
+	
 	tain<int>* th = new tain<int>();
 
-
+	auto tn = std::make_unique<tain<int>>();
 	
-	delete th;
-	th->multiply(23, 235, 623, 12, 5.3);
+
+
+	// th->multiply(23, 235, 623, 12, 5.3);
+	 delete th;
 }
