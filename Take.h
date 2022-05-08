@@ -2,6 +2,10 @@
 
 #include <iostream>
 #include <functional>
+#include <thread>
+#include <atomic>
+#include <mutex>
+
 
 template <typename ... T>  class tain {
 public:
@@ -26,6 +30,15 @@ public:
 	}
 
 public:
+
+	typedef tain<T> iterator;
+	typedef tain<T> const_iterator;
+
+	tain(std::initializer_list<T> value);
+
+	iterator begin();
+	iterator end();
+
 
 	std::vector<T> Vec;
 
