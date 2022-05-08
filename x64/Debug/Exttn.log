@@ -1,0 +1,13 @@
+﻿  Source.cpp
+C:\Users\ikstr\source\repos\Exttn\Exttn\Take.h(26,49): error C2760: syntax error: '...' was unexpected here; expected 'expression'
+C:\Users\ikstr\source\repos\Exttn\Exttn\Take.h(35): message : see reference to class template instantiation 'tain<T...>' being compiled
+C:\Users\ikstr\source\repos\Exttn\Exttn\Take.h(27,10): error C7515: a fold expression must contain an unexpanded parameter pack
+C:\Users\ikstr\source\repos\Exttn\Exttn\Take.h(26,35): error C3553: decltype expects an expression not a type
+C:\Users\ikstr\source\repos\Exttn\Exttn\Take.h(35,14): error C3520: 'T': parameter pack must be expanded in this context
+C:\Users\ikstr\source\repos\Exttn\Exttn\Take.h(35,1): message : This diagnostic occurred in the compiler generated function 'tain<int>::tain(void)'
+C:\Users\ikstr\source\repos\Exttn\Exttn\Take.h(35): message : see reference to function 'tain<int>::tain(void)'
+C:\Users\ikstr\source\repos\Exttn\Exttn\Take.h(32,1): error C2664: 'std::function<void (void)>::function(std::nullptr_t) noexcept': cannot convert argument 1 from 'tain<int>::<lambda_2>' to 'std::nullptr_t'
+C:\Users\ikstr\source\repos\Exttn\Exttn\Take.h(32,40): message : No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\functional(1041,5): message : see declaration of 'std::function<void (void)>::function'
+C:\Users\ikstr\source\repos\Exttn\Exttn\Take.h(35,1): message : This diagnostic occurred in the compiler generated function 'tain<int>::tain(void)'
+C:\Users\ikstr\source\repos\Exttn\Exttn\Take.h(32): message : see reference to function 'tain<int>::tain(void)'

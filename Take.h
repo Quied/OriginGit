@@ -3,7 +3,7 @@
 #include <iostream>
 #include <functional>
 
-template <typename T>
+template <typename ... T>
 class tain {
 public:
 
@@ -12,12 +12,22 @@ public:
 		if (!ptr) { throw std::bad_alloc(); }
 		return ptr;
 	}
-	.
-
-
+	
 	static void operator delete(void* ptr) {
 		std::free(ptr);
 	}
+
+	auto sum(T ... _sum) {
+		return (_sum + ...);
+	}
+	
+	// !
+	/* 
+	auto multiply(const T& ... a) -> decltype (t * ...) {
+		return (t * ...);
+	}
+	 */
+
 
 public:
 
