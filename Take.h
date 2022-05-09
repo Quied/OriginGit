@@ -25,24 +25,14 @@ public:
 	}
 	
 	template <typename Y>
-	static auto multiply(const T& ... a, const Y& b) -> decltype (... * b) {
-		return (... * b);
+	static auto multiply(const T& ... a, const Y& b) -> decltype(auto) {
+		return (a * ... * b);
 	}
 
 public:
 
-	typedef tain<T> iterator;
-	typedef tain<T> const_iterator;
 
-	tain(std::initializer_list<T> value);
-
-	iterator begin();
-	iterator end();
-
-
-	std::vector<T> Vec;
-
-//	tain(T ... a) { }
+	//	tain(T ... a) { }
 
 
 
