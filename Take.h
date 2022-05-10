@@ -34,6 +34,17 @@ public:
 
 	//	tain(T ... a) { }
 
+	/*
 
+	typedef tain<T> iterator;
+	typedef tain<T> const_iterator;
+
+	tain(std::initializer_list<T> value);
+
+	iterator begin();
+	iterator end();
+	*/
+
+	std::function<void()> Foo = [=]() mutable { };
 
 };
